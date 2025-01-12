@@ -1,3 +1,5 @@
+// components/Footer.tsx
+
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -17,12 +19,14 @@ const Footer: React.FC = () => {
     );
 };
 
-const styles = {
+import { CSSProperties } from 'react';
+
+const styles: { [key: string]: CSSProperties } = {
     footer: {
         backgroundColor: '#333',
         color: '#fff',
         padding: '20px 0',
-        textAlign: 'center' as 'center',
+        textAlign: 'center',
     },
     container: {
         maxWidth: '1200px',

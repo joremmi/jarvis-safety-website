@@ -1,3 +1,6 @@
+// components/Services.tsx
+import Image from 'next/image';
+
 const ServicesSection = () => {
     const services = [
       { title: "Compliance Audits", img: "/images/audit-bg.jpg" },
@@ -15,7 +18,7 @@ const ServicesSection = () => {
               key={service.title}
               className="relative rounded-lg overflow-hidden shadow-lg bg-white"
             >
-              <img
+              <Image
                 src={service.img}
                 alt={service.title}
                 className="w-full h-40 object-cover"

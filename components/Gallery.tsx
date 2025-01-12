@@ -1,3 +1,6 @@
+// components/Gallery.tsx
+import Image from 'next/image';
+
 const GallerySection = () => {
     const images = [
       "/images/audit-bg.jpg",
@@ -11,7 +14,7 @@ const GallerySection = () => {
         <h2 className="text-4xl font-bold text-center mb-8">Our Work</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {images.map((image, index) => (
-            <img
+            <Image
               key={index}
               src={image}
               alt={`Gallery Image ${index + 1}`}

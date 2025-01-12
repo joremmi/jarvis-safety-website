@@ -1,3 +1,5 @@
+// components/Testimonial.tsx
+
 import React from "react";
 
 const TestimonialSection = () => {
@@ -23,7 +25,7 @@ const TestimonialSection = () => {
             key={index}
             className="p-6 border rounded-lg shadow-lg bg-white"
           >
-            <p className="text-lg italic mb-4">"{testimonial.feedback}"</p>
+            <p className="text-lg italic mb-4">&quot;{testimonial.feedback}&quot;</p>
             <h4 className="font-bold">{testimonial.name}</h4>
             <p className="text-gray-500">{testimonial.company}</p>
           </div>

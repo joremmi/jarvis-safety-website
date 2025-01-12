@@ -1,3 +1,6 @@
+// components/Team.tsx
+import Image from 'next/image';
+
 const TeamSection = () => {
     const teamMembers = [
       { name: "Alice Johnson", role: "CEO", img: "/images/company-overview.jpg" },
@@ -10,7 +13,7 @@ const TeamSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="p-6 border rounded-lg shadow-lg bg-white">
-              <img
+              <Image
                 src={member.img}
                 alt={member.name}
                 className="w-32 h-32 mx-auto rounded-full mb-4"
